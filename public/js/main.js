@@ -17,7 +17,7 @@ function changeScore(s) {
 }
 
 function saveScore(name, score) {
-  $.ajax( { url: "/save_score?name=" + name + "&score=" + score, cache : false }).done(function(data) {    
+  $.ajax({url: "/save_score?name=" + name + "&score=" + score, cache : false}).done(function(data) {
     window.location.replace("/"); // Go to hiscore page
   });
 }
